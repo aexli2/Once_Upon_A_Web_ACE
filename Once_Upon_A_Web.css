@@ -1,0 +1,90 @@
+#Intro {
+	text-align: center;
+	color: white;
+	font-size: 100px;
+	font-family: monospace;
+	
+}
+#IntroB{
+		background-image: url('https://media.istockphoto.com/id/1467645339/video/the-dark-forest-at-night-covered-with-a-mystical-fog.jpg?s=640x640&k=20&c=6Jqwx985OrdP-Iq7Hf6fHzBIiFSlIjnRvjBeYqwp7c0=');
+	  	background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: 100% 100%;
+}
+
+button{
+	size: 20px;
+	background-color: grey;
+	padding: 25px 50px;
+	border-radius:50%;
+	/*border-color: yellow;
+	border-style: solid;
+	border-width: 5px;*/
+	transition: background-color .3s ;/*ease: Brings the change slowly*/
+
+	transition: animation 2s;
+	
+	}
+
+button:hover{
+	background-color: darkred;
+}
+button: {
+	animation:fade;
+	animation-fill-mode:forwards;
+
+
+}
+
+.ChatBox{
+	text-align: bottom left;
+	background-color: black;
+	height: 100px;
+	opacity: 30%;
+	padding: 50px 450px;
+	transition: fade 2s;
+	}
+
+ChatBox:hover{
+	animation:fade;
+	animation-fill-mode:forwards;
+}
+
+
+.CharacterChat{
+	font-family: sans-serif;
+	font-size: 30px;
+	color: white;
+}
+
+.CharacterPortrait{
+
+
+
+}
+
+@keyframes bounce{
+	0%{transform:translateY(0);}
+	50%{transform:translateY(-30px);}
+	100%{transform:translateY(0);}
+}
+
+div.bounce{
+	animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes fade{
+	100%{opacity:0;}
+	0%{opacity:1;}
+}
+
+div.fade{
+	animation:fade 2s;
+	animation-fill-mode: forwards;
+
+
+}
+
+.introduction{
+
+}
